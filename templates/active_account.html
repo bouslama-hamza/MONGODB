@@ -1,0 +1,29 @@
+{% extends "base_app.html" %}
+{% block test %}
+<title>{{title}}</title>
+<div class="manage_account_page">
+    <div class="manage_account_title">
+        <h3>Editer Le Profile</h3>
+    </div>
+    <div class="manage_account_file">
+        <div class="manage_account_input">
+            <form action="/Active account" method="POST">
+                {% if message %}
+                    <h3 style="color: green;">{{message}}</h3>
+                {% endif %}
+                <input type="text" name="ch_name" placeholder="First Name" required><br>
+                <input type="text" name="ch_l_name" placeholder="Last Name" required><br>
+                <input type="email" name="ch_email" placeholder="Email Address" required><br>
+                <input type="password" name="ch_password" placeholder="New Password" required><br>
+                <input type="password" name="ch_con_password" placeholder="Confirme Password" required><br>
+                <input type="text" name="ch_phone" placeholder="Phone Number" required><br>
+                <input type="submit" value="Send Validation">
+            </form>
+        </div>
+        <div class="manage_account_picture">
+            <h3>Change tous les parametre de compte</h3>
+            <img src="{{url_for('static' , filename ='IMAGES/forget_password.png')}}">
+        </div>
+    </div>
+</div>
+{% endblock test %}

@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.manage_account_page{
+    border: 1px solid black;
+    height: 600px;
+    border: none;
+}
+.manage_account_title{
+    border: 1px solid black;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    border: none;
+}
+.manage_account_title h3{
+    font-size: 27px;
+    color: rgb(16, 24, 64);
+    margin-left: 7%;
+}
+.manage_account_file{
+    border: 1px solid black;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+    border: none;
+}
+.manage_account_input{
+    border: 1px solid black;
+    height: 80%;
+    width: 40%;
+    border: none;
+}
+.manage_account_input input{
+    padding: 12px 60px 12px 60px;
+    margin: 3% 5%;
+}
+.manage_account_input input[type=submit]{
+    background-color: rgb(16, 24, 64);
+    color: white;
+    margin-left: 26%;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: none;
+    transition: all 0.3s linear;
+}
+.manage_account_input input[type=submit]:hover{
+    background-color: rgb(22, 39, 121);
+    transition: all 0.3s linear;
+}
+.manage_account_picture{
+    border: 1px solid black;
+    width: 40%;
+    border: none;
+    opacity: 1;
+    transition: all 0.3s linear;
+}
+.manage_account_picture img{
+    width: 360px;
+    height: 300px;
+    margin-top: 10%;
+    margin-left: 5%;
+}
+.manage_account_picture h3{
+    color: rgb(32, 28, 28);
+    font-size: 35px;
+    line-height: 8vh;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.manage_account_picture.active{
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s linear;
+}

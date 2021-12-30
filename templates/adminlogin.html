@@ -1,0 +1,39 @@
+{% extends "base_app.html" %}
+{% block test %}
+<div class="app_data">
+    <div class="app_data_title">
+        <h2>Bienvenue A Application De Gestion Des Contact</h2>
+        <h3>Les Information Ci-dessous Present Les Derniere Contact A Admin De Departement</h3>
+    </div>
+    <div class="app_info_title">
+        <div class="app_info_fullname">
+            <h3>Nome Complete</h3>
+        </div>
+        <div class="app_info_email">
+            <h3>Email Adresse</h3>
+        </div>
+        <div class="app_info_message">
+            <h3>Message Complete</h3>
+        </div>
+    </div>
+    
+        <div class="app_info">
+        {% if info %}
+            {% for  i in info %}
+            <div class="app_item">
+                <div class="info_fullname">
+                    {{i["FullName"]}}
+                </div>
+                <div class="info_email">
+                    {{i["Email"]}}
+                </div>
+                <div class="info_message">
+                    {{i["Message"]}}
+                </div>
+            </div>
+            {% endfor %}
+        {% endif %}
+        </div>
+        
+</div>
+{% endblock test %}

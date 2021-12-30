@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.home_page{
+    margin-top: 80px;
+    border: 1px solid black;
+    height: auto;
+    background-color: #C7A55D00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+.home_page_info{
+    border: 1px solid black;
+    height: 70%;
+    width: 43%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 8vh;
+    color: #444343;
+    font-size: 45px;
+    border: none;
+}
+.home_page_picture{
+    border: 1px solid black;
+    height: 100%;
+    width: 47%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+.info_suptitile{
+    margin-top: 25px;
+    font-size: 25px;
+    line-height: 5.5vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: dimgrey;
+}
+input[type = submit]{
+    margin-top: 40px;
+    border: none;
+    outline: none;
+    padding: 15px 150px 15px 150px;
+    border-radius: 4px;
+    font-size: 25px;
+    text-align: center;
+    background-color: #115F44;
+    color: white;
+    transition: all 0.5s linear;
+}
+input[type = submit]:hover{
+    background-color: #06AF6E;
+    transition: all 0.5s linear;
+}
+.email_class{
+    border: none;
+    outline: none;
+    padding: 15px 120px 15px 120px;
+    border-radius: 4px;
+    font-size: 25px;
+    text-align: center;
+    background-color: #ffffff;
+    color: rgb(226, 116, 26);
+    transition: all 0.5s linear;
+}

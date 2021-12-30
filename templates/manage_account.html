@@ -1,0 +1,29 @@
+{% extends "base_app.html" %}
+{% block test %}
+<title>{{title}}</title>
+<div class="manage_account_page">
+    <div class="manage_account_title">
+        <h3>General Settings</h3>
+    </div>
+    <div class="manage_account_file">
+        <div class="manage_account_input">
+            <form action="/Manage Account" method="POST">
+                {% if alert %}
+                    <h3 style="color: green;">{{alert}}</h3>
+                {% endif %}
+                <input type="text" name="name" placeholder="First Name" required><br>
+                <input type="text" name="l_name" placeholder="Last Name" required><br>
+                <input type="email" name="email" placeholder="Email Address" required><br>
+                <input type="password" name="password" placeholder="Password" required><br>
+                <input type="password" name="con_password" placeholder="Confirme Password" required><br>
+                <input type="text" name="phone" placeholder="Phone Number" required><br>
+                <input type="submit" value="Send Validation">
+            </form>
+        </div>
+        <div class="manage_account_picture">
+            <h3>Help You Manage All User Account</h3>
+            <img src="{{url_for('static' , filename ='IMAGES/data_base.png')}}">
+        </div>
+    </div>
+</div>
+{% endblock test %}

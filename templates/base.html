@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Département des Eaux et Forêts</title>
+    <link rel="stylesheet" href="{{url_for('static' , filename = 'CSS/style.css')}}">
+    <link rel = "icon" href = "../static/images/logo/1.png" type = "image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+</head>
+<body>
+    <div class="nav_bar" id="myHeader">
+        <div class="nav_bar_lien">
+            <a class="nav_bar_iteam" id="nav_bar_1" href="/">ACCEUIL</a>
+            <a class="nav_bar_iteam" id="nav_bar_2" href="/about">A PROPRE</a>
+            <a class="nav_bar_iteam" id="nav_bar_3" href="/service">ANNONCE</a>
+            <a class="nav_bar_iteam" id="nav_bar_4" href="/contact">CONTACT</a>
+        </div>
+        <a href="/">
+            <div class="back">
+                <img src="http://www.eauxetforets.gov.ma/AccueilAR/SiteAssets/Style-Arb/img/logo.png">
+            </div>
+        </a>
+    </div>
+    {% block content %}
+    {% endblock content %}
+    <div class="footer">
+        <div class="footer_link">
+            <div class="footer_about">
+                <h6 class="footer_all">À propos de la société</h6><br><br>
+                <p class="footer_info">LA DIRECTION DES EAUX ET FORÊTS A POUR OBJECTIF DE FOURNIR TOUTES LES INFORMATIONS LIÉES AU DOMAINE ENVIRONNEMENTAL,</p>
+            </div>
+            <div class="footer_useful">
+                <h6 class="footer_all">Autre</h6><br>
+                <a class="footer_info_1" href="/">Acceuil</a><br>
+                <a class="footer_info_1" href="/about">A propre</a><br>
+                <a class="footer_info_1" href="/service">Service</a><br>
+                <a class="footer_info_1" href="/contact">Contact</a><br>
+            </div>
+            <div class="footer_service">
+                <h6 class="footer_all">Service</h6><br>
+                <a class="footer_info_1" href="/service">Annonce</a><br>
+                <a class="footer_info_1" href="/service">Departement</a><br>
+                <a class="footer_info_1" href="/service">Delemitation</a><br>
+                <a class="footer_info_1" href="/">Multimedia</a><br>
+            </div>
+            <div class="footer_contact">
+                <h6 class="footer_all">Contact</h6><br>
+                <div class="footer_info_1">Qartier Des Dunse /Essaouira</div>
+                <div class="footer_info_1">+212 6 00 00 00 00</div>
+                <div class="footer_info_1">Foret@gmail.com</div>
+            </div>
+        </div>
+        <div class="footer_email">
+            <div class="footer_text">
+                <h6 class="footer_all">Autre Question ?</h6><br>
+                <div class="footer_info_1">S'il vous plaît écrivez un e-mail et inscrivez-vous avec nous pour obtenir le droit d'écrire des commentaires</div>
+            </div>
+            <div class="footer_input">
+                <input type="email" placeholder="Votre Email Adresse" required>
+            </div>
+        </div>
+    </div>
+    <footer> Copyright © 2019 Le Département des Eaux et Forêts © Elaborer Par : Bouchra Daif</footer>
+<script src="{{url_for('static' , filename = 'JS/script.js')}}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</body>
+</html>

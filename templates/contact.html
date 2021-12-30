@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block content %}
+<header class="header">
+    <div class="contact_title">
+        <h5>Nous Contacter</h5>
+        <h3 class="contact_mini_title">Pour plus d'informations ou toute demande de renseignements</h3>
+    </div>
+    <div class="shape">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 280">
+            <path fill-opacity="1">
+                <animate attributeName="d" dur="20000ms" repeatCount="indefinite"
+                    values="M0,160L48,181.3C96,203,192,245,288,261.3C384,277,480,267,576,234.7C672,203,768,149,864,117.3C960,85,1056,75,1152,90.7C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z; M0,160L48,181.3C96,203,192,245,288,234.7C384,224,480,160,576,133.3C672,107,768,117,864,138.7C960,160,1056,192,1152,197.3C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;												 M0,64L48,74.7C96,85,192,107,288,133.3C384,160,480,192,576,170.7C672,149,768,75,864,80C960,85,1056,171,1152,181.3C1248,192,1344,128,1392,96L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;
+                                                 M0,160L48,181.3C96,203,192,245,288,261.3C384,277,480,267,576,234.7C672,203,768,149,864,117.3C960,85,1056,75,1152,90.7C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;" />
+            </path>
+        </svg>
+    </div>
+</header>
+<div class="contact_border">
+    <h3 style="color: #ababab;margin-right: 20px;">Acceuil</h3> &#8250;<h3 style="margin-left: 20px;">Contact</h3>
+</div>
+<div class="contact_area">
+    <h3 style="font-family: 'Barlow', sans-serif;text-align: center; font-size: 35px; margin-bottom: 6%;">Prenez contact avec nous</h3><br>
+    <div class="contact_all">
+        <div class="contact_text">
+            {% if message %}
+            <p style="color:  green;">{{message}}</p>
+            {% endif %}
+            <form action="/contact" method="POST">
+                <h3>Nom Complete</h3>
+                <input type="text" name="name" required><br>
+                <h3>Email Adresse *</h3>
+                <input type="text" name="email" required><br>
+                <h3>Message *</h3>
+                <textarea id="" name="message" cols="30" rows="10" required></textarea>
+                <input type="submit" value="Submit Message">
+            </form>
+        </div>
+        <div class="contact_location">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3401.9726799553287!2d-9.762532985460352!3d31.49743475542704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdad9b343f745e89%3A0x55219ab5b5aa623!2sEssaouira%20D%C3%A9partement%20des%20Eaux%20et%20For%C3%AAts!5e0!3m2!1sfr!2sma!4v1626505938172!5m2!1sfr!2sma" width="636" height="536" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock content %}

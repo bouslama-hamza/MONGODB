@@ -1,0 +1,67 @@
+.admin_page{
+    border: 1px solid black;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.12), rgba(247, 240, 240, 0.2)), url("../images/header/2.jpg") center/cover no-repeat;
+    min-height: 100vh;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    border: none;
+    margin-bottom: -15%;
+}
+
+.admin_bar{
+    border: 1px solid black;
+    width: 28%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 15px;
+    border: none;
+}
+
+.admin_text{
+    font-size: 20px;
+    color: green;
+    text-align: center;
+    margin-top: 20px;
+    line-height: 5vh;
+}
+
+form .admin_password,
+form .admin_text,
+form .admin_button,
+form .admin_email{
+    border: 1px solid black;
+    height: 25%;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    line-height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 35px;
+    border: none;
+}
+
+input[type = tel] , input[type = password] {
+    border: 1px solid black;
+    padding: 15px 50px 15px 50px;
+    outline: none;
+    border-radius: 5px;
+    border-color: green;
+    border-width: 2px;
+    font-size: 14px;
+}
+
+input[type=submit]{
+    padding: 10px 80px 10px 80px;
+}

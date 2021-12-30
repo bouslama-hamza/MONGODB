@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="{{url_for('static' , filename = 'IMAGES/data_base_picture.png')}}" type="images/x-icon">
+    <link rel="stylesheet" href="{{url_for('static' , filename = 'CSS/app.css')}}">
+    <link rel="stylesheet" href="{{url_for('static' , filename = 'CSS/manage_account.css')}}">
+
+</head>
+<body>
+<div class="app_page">
+    <div class="app_border"></div>
+    <div class="app_main">
+        <img style="height: 40px;width: 170px;" class="app_img" src="http://www.eauxetforets.gov.ma/AccueilAR/SiteAssets/Style-Arb/img/logo.png">
+        <a class="app_connection" href="#"><img src="{{url_for('static' , filename = 'ICONS/network.png')}}">
+            <h2>Connections</h2></a>
+        <div class="app_modification" id="app_modification">
+            <a href="/app">Gestion Des Contact</a>
+            <a href="/Manage Account">Manager Des Compte</a>
+            <a href="/Active account">Edit Profile General</a>
+        </div>
+        <a class="app_privacy" href="#"><img src="{{url_for('static' , filename = 'ICONS/shield-with-lock.png')}}">
+            <h2>Privacy</h2></a>
+        <a class="app_notificat" href="#"><img src="{{url_for('static' , filename = 'ICONS/notifications.png')}}">
+            <h2>Notification</h2></a>
+        <a class="app_settings" href="#"><img src="{{url_for('static' , filename = 'ICONS/settinges.png')}}">
+            <h2>Settings</h2></a>
+    </div>
+    <div class="app_use">
+        <div class="app_header">
+            <div class="app_title">
+                <h3>Gestion Des Contact</h3>
+            </div>
+            <div class="app_object">
+                <div class="app_notification">
+                    <a href="#"><img src="{{url_for('static' , filename = 'ICONS/notification.png')}}"></a>
+                </div>
+                <div class="app_account" onclick="menu()">
+                    <img onclick="menutoogle();" class="app_profile" src="{{url_for('static' , filename = 'ICONS/user.png')}}">
+                    <div class="app_profile_menu" id="app_profile">
+                        <div class="app_center">
+                            <img class="app_picture" src="{{url_for('static' , filename = 'ICONS/user.png')}}">
+                            <div class="app_profile_name">Admin Foret</div>
+                            <div class="app_profile_email">Admin@gmail.com</div>
+                        </div>
+                        <ul>
+                            <z><a href="/Active account"><img src="{{url_for('static' , filename = 'ICONS/edit.png')}}">Editer Profile</a><br></z>
+                            <z><a href="#"><img src="{{url_for('static' , filename = 'ICONS/settings.png')}}">Parametre</a><br></z>
+                            <z><a href="/admin"><img src="{{url_for('static' , filename = 'ICONS/log-out.png')}}">Log Out</a><br>
+                            </z>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% block test %}
+        {% endblock test %}
+        <div class="app_footer">
+            <div class="app_footer_vedio">
+                <div class="app_vedio_title">
+                    <h3>Full Documentation</h3>
+                </div>
+                <div class="app_vedio">
+                    <!-- <img src="{{url_for('static' , filename = 'ICONS/network.png')}}"> -->
+                </div>
+            </div>
+            <div class="app_footer_text">
+                <div class="app_text_title">
+                    <h3>View All Documentation</h3>
+                </div>
+                <div class="app_text">
+                    <h3>Not sure where to get started? Our docs contain resources to get your workspace up and
+                        running.</h3>
+                    <li>Getting started with Data Base</li>
+                    <li>Learn more about Destinations</li>
+                    <li>Learn with Hearbly University</li>
+                </div>
+            </div>
+            <div class="app_footer_team">
+                <div class="app_team_title">
+                    <h3>Invite Team Member To help</h3>
+                </div>
+                <div class="app_team">
+                    <h3>Peers in different functions make setup easier and Query more powerful.</h3>
+                    <input type="submit" value="Invite Team Member">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="{{url_for('static' , filename = 'JS/script2.js')}}"></script>
+</body>
+</html>

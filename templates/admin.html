@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+<link rel="stylesheet" href="{{url_for('static' , filename = 'CSS/admin.css')}}">
+<div class="admin_page">
+    <div class="admin_bar">
+        <h1 class="admin_text">MERCI DE REMPLIR LE FORMULE SUIVANT </h1>
+        <form action="/admin" , method="POST">
+            {% if message %}
+                <p style="color: red;">{{message}}</p>
+            {% endif %}
+            <div class="admin_email">
+                <input type="tel" class="email" name="email" placeholder="EMAIL ADRESSE">
+            </div>
+            <div class="admin_password">
+                <input type="password" name="password" placeholder="PASSWORD">
+            </div>
+            <div class="admin_button">
+                <input type="submit" value="LOG IN">
+            </div>
+       </form>
+    </div>
+</div>
+{% endblock content %}
